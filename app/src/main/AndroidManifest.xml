@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.shop.el_arishschool">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".spalsh_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            tools:targetApi="jelly_bean" />
+        <activity android:name=".code_access" />
+        <activity android:name=".code_access2" />
+        <activity android:name=".grades_page" />
+        <activity android:name=".absence_student" />
+        <activity android:name=".result_student" />
+        <activity android:name=".info_employee" />
+        <activity android:name=".Addstudent" />
+        <activity android:name=".searchanddisplay" />
+        <activity android:name=".infooradd" />
+        <activity android:name=".studentdetails" />
+        <activity android:name=".studentresult" />
+        <activity android:name=".student_result" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

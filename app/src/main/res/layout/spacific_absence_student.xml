@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:text="نتيجة الطالب"
+        android:drawableBottom="@drawable/ic_result"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="240dp"
+        android:text="الاسم:"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp" />
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:text="عمر محمد كريم محمود"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignTop="@+id/tv_result2"
+        android:text="المجموع:"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tv_result2"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="296dp"
+        android:gravity="right"
+        android:text="330"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

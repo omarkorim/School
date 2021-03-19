@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="90dp"
+        android:background="#fff"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            app:srcCompat="@drawable/ic_student" />
+
+        <!-- tv 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="10dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="3"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="رقم الطالب :" />
+        </LinearLayout>
+
+        <!-- tv 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="عمر محمد كريم محمود"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="الاسم:" />
+        </LinearLayout>
+
+        <!-- tv 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="مستجد"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="الحالة:" />
+        </LinearLayout>
+
+        <!-- tv 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_religon"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="مسلم"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="الديانه:" />
+        </LinearLayout>
+
+        <!-- tv 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_nationality"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="مصري"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="الجنسيه:" />
+        </LinearLayout>
+
+        <!-- tv 6 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_turnto"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="لم يحول"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="حول الي:" />
+        </LinearLayout>
+
+        <!-- tv 7 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="10dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="23-8-1998"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="يوم الميلاد:" />
+        </LinearLayout>
+
+        <!-- tv 8 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="10dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="349"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="المجموع:" />
+        </LinearLayout>
+
+        <!-- tv 9 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="مدرسة الاعداديه بنين"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="من مدرسة:" />
+        </LinearLayout>
+
+        <!-- tv 10 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_branch"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="تحديد الشعبه في السنه القادمه"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="الشعبه:" />
+        </LinearLayout>
+
+        <!-- tv 11 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_sitnum"
+                android:layout_width="10dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="1123"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text=" رقم الجلوس:" />
+        </LinearLayout>
+
+        <!-- tv 12 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_nationalityid"
+                android:layout_width="10dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="3213214124"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="الرقم القومي:" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

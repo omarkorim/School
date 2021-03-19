@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+
+        android:layout_width="444dp"
+        android:layout_height="170dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_studentnumber"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/et_newstyle"
+            android:hint="رقم الموظف الذي ترغب في الاستعلام عنه"
+            app:layout_constraintBottom_toTopOf="@+id/bu_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:drawableRight="@drawable/ic_num"
+            android:paddingRight="5dp"/>
+
+        <Button
+
+            android:id="@+id/bu_search"
+            android:layout_width="105dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/bu_newstyle"
+            android:drawableRight="@drawable/ic_search"
+            android:text="استعلام"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+
+            android:id="@+id/textView5"
+            android:layout_width="187dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="بيانات الموظفين"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:drawableRight="@drawable/ic_info"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_numberofemployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="ID"
+                    android:background="@drawable/et_newstyle2"
+                    android:drawableRight="@drawable/ic_num"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="رقم الموظف:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="اسم الموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الاسم:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_dateofabsence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="تاريخ ميلاد الموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تاريخ الميلاد:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_qulify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="مؤهل الموظف وتاريخه"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="مؤهل الموظف:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_appointdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="تاريخ تعيين الموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تاريخ التعيين:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_specialize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="تخصص الموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="التخصص:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_dateofwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="تاريخ استلام العمل"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="التاريخ:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="وظيفة الموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الوظيفه:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="العنوان الحالي للموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="العنوان:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_nationalitynumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="الرقم القومي"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الرقم القومي:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp">
+
+                <EditText
+                    android:id="@+id/et_phonenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="رقم الهاتف للموظف"
+                    android:background="@drawable/et_newstyle2"
+                    android:paddingRight="5dp" />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="رقم الهاتف:"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="7dp">
+
+                <Button
+                    android:id="@+id/bu_printer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bu_newstyle2"
+                    android:text="لقطة الشاشه"
+                    android:drawableRight="@drawable/ic_screenshot"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/bu_deleteempolyee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bu_newstyle2"
+                    android:text="حذف"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+
+                <Button
+                    android:id="@+id/bu_saveempolyee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bu_newstyle2"
+                    android:text="حفظ "
+                    android:drawableRight="@drawable/ic_save"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/bu_addempolyee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bu_newstyle2"
+                    android:text="اضافة "
+                    android:drawableRight="@drawable/ic_add"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
